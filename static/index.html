@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NextSkill - find the skill that gets you hired</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>NextSkill</h1>
+            <p>Check the demand and pay for a skill, then browse real jobs that need it.</p>
+        </header>
+
+        <main>
+            <form id="search-form">
+                <input id="what" type="text" placeholder="Skill or job title, e.g. python" required>
+                <input id="where" type="text" placeholder="City (optional)">
+                <select id="country">
+                    <option value="gb">United Kingdom</option>
+                    <option value="us">United States</option>
+                    <option value="za">South Africa</option>
+                    <option value="ca">Canada</option>
+                    <option value="au">Australia</option>
+                    <option value="in">India</option>
+                    <option value="de">Germany</option>
+                    <option value="fr">France</option>
+                </select>
+                <select id="sort">
+                    <option value="relevance">Most relevant</option>
+                    <option value="date">Newest</option>
+                    <option value="salary">Highest Salary</option>
+                </select>
+                <input id="salary-min" type="number" min="0" step="1000" placeholder="Minimum salary">
+                <label><input id="full-time" type="checkbox"> Full-time only</label>
+                <label><input id="no-senior" type="checkbox"> Hide senior roles </label>
+                <button type="submit">Search</button>
+            </form>
+
+            <p id="message"></p>
+
+            <section id="summary" hidden>
+                <div class="stat">
+                    <span id="job-count"></span>
+                    <small>open jobs</small>
+                </div>
+                <div class="stat">
+                    <span id="avg-salary"></span>
+                    <small>average salary</small>
+                </div>
+                <div id="salary-chart"></div>
+            </section>
+
+            <input id="filter" type="search" placeholder="filter these results by company or location" hidden>
+            <section id="results"></section>
+        </main>
+
+       <footer>
+        <p>Job data by <a href="https://www.adzuna.com" target="_blank" rel="noopener">Adzuna</a></p>
+        <p id="server"></p>
+       </footer>
+
+       <script src="script.js"></script>
+    </body>
+    </html>
+
