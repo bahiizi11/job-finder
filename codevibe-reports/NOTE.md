@@ -18,6 +18,10 @@ Some things that show this:
 - The only file I never had to correct, `requirements.txt`, shows **0% AI**. Every file I corrected shows a high percentage.
 - Fixing typos made the number go up, while typing new code made it go down slightly.
 
+## Why my ownership score never changed
+
+My ownership score stayed at 0/100 the whole time, even though I opened, read and edited all my files. CodeVibe lists my files as needing review because it counts my typo fixes as AI, but its review tracker only starts after a real AI event. Since my project has none, no review was ever recorded, so the score could never move from 0.
+
 ## Please check it yourself
 
 The full list of events is inside the CodeVibe report in this folder. If you look at it, you will find:
