@@ -3,7 +3,7 @@
 NextSkill helps students decide which skill to learn next. Search a skill or job title, pick a country, and see how many jobs are open, the average salary, a salary chart and real job listings.
 
 - **Live app:** https://www.arsenetech.tech
-- **Demo video:** [ADD YOUR VIDEO LINK]
+- **Demo video:** https://youtu.be/I0_i-6aMPPA
 
 ## Features
 
